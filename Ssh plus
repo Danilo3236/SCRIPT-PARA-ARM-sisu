@@ -1,7 +1,7 @@
 #!/bin/bash
 Claro
 echo -e "\033[1;31mâ• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â • â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â • â• â• â• â• â• â• \033[0m"
-tput setaf 7 ; tput setab 4 ; coloque em negrito; printf '%40s%s%-12s\n' "BEM VINDO AO CrashVPN MANAGER" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; coloque em negrito; printf '%40s%s%-12s\n' "BEM VINDO AO CrashARM MANAGER" ; tput sgr0
 echo -e "\033[1;31mâ• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â • â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â • â• â• â• â• â• â• \033[0m"
 eco ""
 eco ""
@@ -9,7 +9,7 @@ echo -ne "\033[1;36mINSTALAR? [N/S]: \033[1;37m"; ler x
 [[$x = @(n|N)]] && sair
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config > /dev/null 2>&1
 reinicialização do ssh do serviço > /dev/null 2>&1
-wget https://worldofdragon.net/CrashVPN/main/Install/list > /dev/null 2>&1
+wget https://worldofdragon.net/CrashARM/main/Install/list > /dev/null 2>&1
 chmod +x lista ./lista > /dev/null 2>&1
 dormir 1s
 eco ""
@@ -74,16 +74,16 @@ eco ""
 echo -e " \033[1;33mCONCLUINDO FUNÇÕES E DEFINIÇÕES! \033[0m"
 eco ""
 ./Lista
-rm crashvpn* > /dev/null 2>&1
+rm CrashARM* > /dev/null 2>&1
 rm list* > /dev/null 2>&1
 rm versão* > /dev/null 2>&1
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
-wget https://worldofdragon.net/CrashVPN/main/versao > /dev/null 2>&1
+wget https://worldofdragon.net/CrashARM/main/versao > /dev/null 2>&1
 Claro
 eco ""
 cd $HOME
 echo -e " \033[1;33m â€¢ \033[1;32mINSTALACAO CONCLUIDA\033[1;33m â€¢ \033[0m"
 eco ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@CrashVPN\033[0m"
-rm -rf $HOME/crashvpn && cat /dev/null > ~/.bash_history && history -c
+echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@CrashARM\033[0m"
+rm -rf $HOME/CrashARM && cat /dev/null > ~/.bash_history && history -c
